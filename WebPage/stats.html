@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./style.css">
+
+<head>
+    <h1>TIC TAC TOE</h1>
+    <div class='SecondaryText'>
+        <span>Game Stats</span>
+    </div>
+</head>
+
+<br></br>
+
+<body>
+    <p>Overall Stats</p>
+    <img src="./image/overallstats.png" alt="overallstats" width='40%' height='40%'>
+    <p>Steps Till Win</p>
+    <img src="./image/stepstillwin.png" alt="stepstillwin" width='40%' height='40%'>
+    <p>Winner Piece</p>
+    <img src="./image/winnerpiece.png" alt="winnerpiece" width='40%' height='40%'>
+
+    <br></br>
+
+    <div ng-show="new_game">
+        <div class="row" style="height: 60px">
+            <div>
+                Do you want to start over?
+            </div>
+        </div>
+    </div>
+    <div>
+        <form action="play.html">
+            <button type="back2game" class="button">Yes</button>
+        </form>
+        <br>
+        <form action="index.html">
+            <button type="back2main" class="button">No</button>
+        </form>
+    </div>
+    
+</body>

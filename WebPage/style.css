@@ -1,0 +1,249 @@
+
+    body{
+        text-align: center;
+        background-color:whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:100%
+    }
+    div{
+        padding-block: 10px;
+    }
+    h1{
+        color: rgb(255, 255, 255);
+        background: rgb(17, 189, 172);
+        font-size: 200%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    strong{
+        font-weight: bold;
+        color: black;
+    }
+
+    .SecondaryText{
+        color: rgb(175, 175, 175);
+        font-size: 80%;
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .form_frame{
+        
+        font-size: 80%;
+        text-align: center;
+        color: black;
+        background: white;
+        outline-color: white;  
+    }
+
+    .button{
+        background-color: rgb(17, 189, 172);
+        color: rgb(255, 255, 255);
+        outline-color: white;
+        font-size: 120%;
+        font-weight: bold;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    td {
+        width: 100px;
+        height: 100px;
+      }
+      table {
+        margin: 5px auto;
+      }
+      .vert {
+        border-left: 4px solid black;
+        border-right: 4px solid black;
+      }
+      .hori {
+        border-top: 4px solid black;
+        border-bottom: 4px solid black;
+      }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #eee;
+    }
+    button {
+        outline: none;
+        border: 2px solid rgb(17, 189, 172);
+        padding: 5px 20px;
+        width: 200px;
+        font-size: 80%;
+        font-weight: bold;
+        background: white;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      button:hover {
+        cursor: pointer;
+        background: rgb(17, 189, 172);
+        color: white;
+      }
+
+      .play-area {
+        display: grid;
+        width: 300px;
+        height: 300px;
+        grid-template-columns: auto auto auto;
+      }
+      .block {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: bold;
+        border: 3px solid black;
+        transition: background 0.2s ease-in-out;
+      }
+      
+      .block:hover {
+        cursor: pointer;
+        background: rgb(17, 189, 172);
+      }
+      .occupied:hover {
+        background: #ff3a3a;
+      }
+
+#block_0,
+#block_1,
+#block_2 {
+  border-top: none;
+}
+
+#block_0,
+#block_3,
+#block_6 {
+  border-left: none;
+}
+
+#block_6,
+#block_7,
+#block_8 {
+  border-bottom: none;
+}
+
+#block_2,
+#block_5,
+#block_8 {
+  border-right: none;
+}
+
+.playerWin {
+  color: green;
+}
+
+.computerWin {
+  color: red;
+}
+
+.draw {
+  color: orangered;
+}
+
+
+.cell {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  vertical-align: center;
+  transition: background-color 0.5s ease;
+  font-size: 50px;
+  font-family: Aria, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 2px solid #ddd;
+}
+
+.board {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+
+.inactive:hover {
+  cursor: default;
+  background-color: inherit;
+}
+
+#loader {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 125px;
+}
+
+#loading-screen {
+  background-color: gray;
+  opacity: 0.075;
+  height: 100%;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 20;
+}
+
+.choice {
+  width: 125px;
+}
+
+.winning {
+  background-color: #2C92E1;
+}
+
+.winning:hover {
+  background-color: #6BB2EA;
+}
+
+.btn {
+  background-color: #2C92E1 !important;
+}
+
+.btn:hover {
+  background-color: #6BB2EA !important;
+}
+
+.right-padding {
+  padding-right: 25px;
+}
+
+@media (max-width: 600px){
+  html, body {
+    font-size: 130%;
+  }
+}

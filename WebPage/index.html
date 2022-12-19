@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="app"></script>
+<link rel="stylesheet" href="./style.css">
+
+<head>
+    <h1>TIC TAC TOE</h1>
+    <div class='SecondaryText'>
+        <span>Hello, welcome to <strong>Tic Tac Toe</strong> game!</span>
+    </div>
+    <img src="image/tic-tac-toe_illustration.jpg" alt="tic-tac-toe_illustratio" width='20%' height='20%'>
+</head>
+
+<br></br>
+
+<body>
+    <label for="human1" >Please Enter Your Name:</label> 
+    <input type="text" id="player1_name" name="user_name_1" class='form_frame'/>
+    <br></br>
+
+    <label for="player_num_select" >Select Chess Piece:</label>
+    <select id= 'player1_piece' class='form_frame'>
+        <option value="">--Please choose an option--</option>
+        <option value="X">X</option>
+        <option value="O">O</option>
+    </select>
+
+    <br></br>
+
+    <label for="player_num_select" >Select Player Number:</label>
+    <select onchange="displayDivDemo('showValuesOnSelect', this)" class='form_frame'>
+        <option value="">--Please choose an option--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+    </select>
+
+    <br></br>
+
+    <div id="showValuesOnSelect">
+        <label for="human2" >Please Enter Player2's Name:
+        </label>
+        <input type="text" id='player2_name' name="user_name_2" class='form_frame'/>
+    </div>
+   
+    <script>
+       function displayDivDemo(id, elementValue) {
+          document.getElementById(id).style.display = elementValue.value == 2 ? 'block' : 'none';
+       }
+    </script>
+    <br></br>
+    <form action="play.html">
+        <button type="enter game" class="button">Enter Game</button>
+    </form>
+    
+</body>
+
