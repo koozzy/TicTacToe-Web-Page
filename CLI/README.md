@@ -2,6 +2,8 @@
 
 #Homework for TECHIN 509 A Technology Foundations
 
-#Nov 08 updates: Week5 Homework (for 2 players)
+Usage
+Requirements
+Try runing the following script to install the dependencies.Install the required libraries
 
-#Nov 15 updates: Week6 Homework (for single player)
+pip install -r requirements.txt
